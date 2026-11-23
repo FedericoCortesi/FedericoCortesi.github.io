@@ -1,0 +1,46 @@
+# CV data shown on the /cv/ page. Replace every [PLACEHOLDER] with your own details.
+# Remove or add sections freely; each key under "sections" becomes a heading.
+cv:
+  name: Federico Cortesi
+  label: "[PLACEHOLDER: e.g. MSc student in ...]"
+  email: you@example.com # PLACEHOLDER
+  location: "[PLACEHOLDER: city, country]"
+  image: ""
+  summary: "[PLACEHOLDER: one-sentence research summary]"
+
+  social_networks:
+    - network: GitHub
+      username: FedericoCortesi
+
+  sections:
+    Education:
+      - institution: "[PLACEHOLDER: university]"
+        location: "[PLACEHOLDER: city, country]"
+        area: "[PLACEHOLDER: field]"
+        studyType: "[PLACEHOLDER: degree, e.g. MSc]"
+        start_date: "[YYYY]"
+        end_date: "[YYYY or present]"
+        highlights:
+          - "[PLACEHOLDER: thesis, GPA, honours]"
+
+    Experience:
+      - company: "[PLACEHOLDER: lab / institution]"
+        position: "[PLACEHOLDER: role, e.g. Research Assistant]"
+        location: "[PLACEHOLDER: city, country]"
+        start_date: "[YYYY]"
+        end_date: "[YYYY or present]"
+        highlights:
+          - "[PLACEHOLDER: what you worked on]"
+
+    Awards:
+      - title: "[PLACEHOLDER: award or scholarship]"
+        date: "[YYYY]"
+        awarder: "[PLACEHOLDER: awarding body]"
+
+    Skills:
+      - name: "[PLACEHOLDER: e.g. Programming]"
+        keywords: "[PLACEHOLDER: e.g. Python, PyTorch, R]"
+
+    Languages:
+      - name: "[PLACEHOLDER: language]"
+        summary: "[PLACEHOLDER: level]"
