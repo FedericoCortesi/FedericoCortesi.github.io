@@ -1,12 +1,13 @@
-# CV data shown on the /cv/ page. Replace every [PLACEHOLDER] with your own details.
-# Remove or add sections freely; each key under "sections" becomes a heading.
+# CV data shown on the /cv/ page (RenderCV format).
 cv:
-  name: Federico Cortesi
-  label: "[PLACEHOLDER: e.g. MSc student in ...]"
-  email: you@example.com # PLACEHOLDER
-  location: "[PLACEHOLDER: city, country]"
+  name: Federico Vittorio Cortesi
+  label: Master of Financial Mathematics student, MIT
+  email: corte911@mit.edu
+  location: Cambridge, MA
   image: ""
-  summary: "[PLACEHOLDER: one-sentence research summary]"
+  summary: >
+    Machine learning researcher working on learning dynamics and optimization in deep networks, and on the
+    optimization of LLM agents. Applying to PhD programs in Operations Research and Statistics.
 
   social_networks:
     - network: GitHub
@@ -14,33 +15,80 @@ cv:
 
   sections:
     Education:
-      - institution: "[PLACEHOLDER: university]"
-        location: "[PLACEHOLDER: city, country]"
-        area: "[PLACEHOLDER: field]"
-        studyType: "[PLACEHOLDER: degree, e.g. MSc]"
-        start_date: "[YYYY]"
-        end_date: "[YYYY or present]"
+      - institution: Massachusetts Institute of Technology
+        location: Cambridge, MA
+        url: https://www.mit.edu/
+        area: Financial Mathematics
+        studyType: Master of Financial Mathematics
+        start_date: 2025
+        end_date: 2027
         highlights:
-          - "[PLACEHOLDER: thesis, GPA, honours]"
+          - "GPA: 4.9/5.0"
+          - "Coursework: Statistical Learning Theory (Ph.D.), Econometrics (Ph.D.), Linear Optimization"
+
+      - institution: Bocconi University
+        location: Milan, Italy
+        url: https://www.unibocconi.eu/
+        area: International Economics and Finance
+        studyType: BSc
+        start_date: 2022
+        end_date: 2025
+        highlights:
+          - 110/110 cum laude
+          - "Senior thesis (score 4/4) with Prof. Matthias Rodemeier: cost of behavioral biases in retail trading (~170M observations)"
+          - "Coursework: Real Analysis, Probability, Statistics, Advanced Macroeconomics, Econometrics, Computer Science"
 
     Experience:
-      - company: "[PLACEHOLDER: lab / institution]"
-        position: "[PLACEHOLDER: role, e.g. Research Assistant]"
-        location: "[PLACEHOLDER: city, country]"
-        start_date: "[YYYY]"
-        end_date: "[YYYY or present]"
+      - company: MIT CSAIL / BCS
+        position: Research Assistant, Prof. Tomaso Poggio
+        location: Cambridge, MA
+        start_date: 2026-01
+        end_date: Present
         highlights:
-          - "[PLACEHOLDER: what you worked on]"
+          - "Agent skills and harnesses: studying parallels between optimization in weight space and prompt space to build a theoretical understanding of agent skills and harnesses; developing a zero-shot approach to skill optimization."
+          - "Learning dynamics: measuring function-space distances during training to show how optimizer choice and training stability shape learned predictions. First author of *Same Error, Different Function* (arXiv:2603.02620), submitted to ICLR 2027."
 
-    Awards:
-      - title: "[PLACEHOLDER: award or scholarship]"
-        date: "[YYYY]"
-        awarder: "[PLACEHOLDER: awarding body]"
+      - company: MIT Operations Research Center
+        position: Research Assistant, Prof. Georgia Perakis
+        location: Cambridge, MA
+        start_date: 2026-09
+        end_date: 2026-12
+        highlights:
+          - "Studying context selection in multi-turn LLM conversations as budget-constrained discrete optimization, using 100K+ chat–mask evaluations on math and coding benchmarks."
+          - "Developing oracle accuracy–cost frontiers and cost-sensitive selection rules relative to a user-only baseline."
+
+      - company: MIT CSAIL / BCS
+        position: Teaching Assistant, Statistical Learning Theory
+        location: Cambridge, MA
+        start_date: 2026-09
+        end_date: 2026-12
+        highlights:
+          - "Guiding graduate research projects on learning dynamics and optimization in deep networks and LLMs, from problem formulation and experimental design to final papers."
+
+    Industry Experience:
+      - bullet: "**Statkraft Trading**, Düsseldorf. Quantitative Research Intern, UK Power (Jun–Aug 2026). Developed and deployed a systematic UK power strategy with a live Sharpe of ~9 over two months net of execution costs; built forecasting, risk and monitoring tools for a 10-person trading team."
+      - bullet: "**MIT Finance Lab × Quantbot Technologies LP**, remote. Quantitative Research Intern, US Equities (Jan–Mar 2026). Modeled tail events across 5,000 U.S. equities with regularized logistic models and expanding-window validation."
+      - bullet: "**DeepTree**, Milan. Founding Team, Machine Learning Engineer (Feb–Sep 2024). Built an embedding-based search and ranking prototype over 1.3M private firms; deployed an acquisition matching model with 95% precision."
+
+    Publications:
+      - title: "Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series"
+        summary: 'F. V. Cortesi\*, G. Iannone\*, G. Crippa, T. Poggio, P. Beneventano'
+        publisher: "arXiv:2603.02620. Submitted to ICLR 2027. *Equal contribution."
+        releaseDate: 2026-03
+        url: https://arxiv.org/abs/2603.02620
 
     Skills:
-      - name: "[PLACEHOLDER: e.g. Programming]"
-        keywords: "[PLACEHOLDER: e.g. Python, PyTorch, R]"
+      - name: Programming
+        keywords: "Python (PyTorch, NumPy, pandas), SQL, R"
+      - name: Tools
+        keywords: "Linux/HPC, Slurm, Git, LaTeX, Bloomberg Terminal"
 
     Languages:
-      - name: "[PLACEHOLDER: language]"
-        summary: "[PLACEHOLDER: level]"
+      - name: Italian
+        summary: Native
+      - name: English
+        summary: Fluent
+      - name: German
+        summary: Fluent
+      - name: French
+        summary: Basic
