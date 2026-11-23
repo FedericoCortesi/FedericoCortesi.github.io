@@ -1,0 +1,20 @@
+---
+---
+
+@comment{
+  Add papers here in BibTeX format; the publications page is built from this file.
+  selected = {true} also shows a paper on the about page.
+}
+
+@article{cortesi2026same,
+  title         = {Same Error, Different Function: The Optimizer as an Implicit Prior in Financial Time Series},
+  author        = {Cortesi, Federico Vittorio and Iannone, Giuseppe and Crippa, Giulia and Poggio, Tomaso and Beneventano, Pierfrancesco},
+  journal       = {arXiv preprint arXiv:2603.02620},
+  year          = {2026},
+  arxiv         = {2603.02620},
+  abbr          = {arXiv},
+  note          = {Submitted to ICLR 2027. Equal contribution: F. V. Cortesi and G. Iannone.},
+  abstract      = {Neural networks applied to financial time series operate in a regime of underspecification, where predictors achieve comparable out-of-sample error. Using large-scale volatility forecasting for S\&P 500 stocks (twelve architecture-optimizer configurations, thirteen seeds each, evaluated on 564,795 held-out observations) we show that comparable test loss conceals measurably different predictors. In eleven of twelve comparisons, models trained from identical initialization and identical data order diverge 1.3 to 7.8 times further than repeated runs of either optimizer alone, ruling out initialization noise as the explanation. On a common scale, predictions differ by 5-17\% of the typical forecast error while the models' error magnitudes differ by less than 0.7\% of it. The divergence reshapes non-linear response profiles, temporal dependence, and ultimately decisions: volatility-ranked portfolios trace a Sharpe-turnover frontier with up to 58\% turnover dispersion at comparable gross Sharpe ratios. In underspecified settings, optimization is a consequential source of inductive bias, and model evaluation must extend beyond scalar loss to functional and decision-level behavior.},
+  bibtex_show   = {true},
+  selected      = {true}
+}
